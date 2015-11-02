@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classify It!</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/user.css">
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/thatsClassified.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" id="headerSegment">
+            <div class="col-md-12">
+                <h1 class="text-center" id="heading">??? WHAT IS THIS THING ???</h1>
+                <div class="row">
+                    <div class="col-md-12 spacer"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="mainSegment">
+            <div id="mammalImg" class="col-md-5"><img class="img-responsive" src="assets/img/mammal.jpg"></div>
+            <div id="amphibianImg" class="col-md-5"><img class="img-responsive" src="assets/img/amphibian.jpg"></div>
+            <div id="birdImg" class="col-md-5"><img class="img-responsive" src="assets/img/bird.jpg"></div>
+            <div id="fishImg" class="col-md-5"><img class="img-responsive" src="assets/img/fish.jpg"></div>
+            <div id="reptileImg" class="col-md-5"><img class="img-responsive" src="assets/img/reptile.jpg"></div>
+            <div id="sandwichImg" class="col-md-5"><img class="img-responsive" src="assets/img/sandwich.jpg"></div>
+            <div id="jellyfishImg" class="col-md-5"><img class="img-responsive" src="assets/img/jellyfish.jpg"></div>
+            <div id="itsAliveImg" class="col-md-5 investigationImg"><img class="img-responsive" src="assets/img/itsAlive.jpg"></div>
+            <div id="tombstoneImg" class="col-md-5 investigationImg"><img class="img-responsive" src="assets/img/Tombstone.jpg"></div>
+            <div id="xRayImg" class="col-md-5 investigationImg"><img class="img-responsive" src="assets/img/xRay.jpg"></div>
+            <div id="noBackboneImg" class="col-md-5 investigationImg"><img class="img-responsive" src="assets/img/noBackbone.jpg"></div>
+            <div id="warmBloodImg" class="col-md-5 investigationImg"><img class="img-responsive" src="assets/img/fire.jpg"></div>
+            <div id="coldBloodImg" class="col-md-5 investigationImg"><img class="img-responsive" src="assets/img/ice.jpg"></div>
+            <div id="furImg" class="col-md-5 investigationImg"><img class="img-responsive" src="assets/img/fur.jpg"></div>
+            <div id="feathersImg" class="col-md-5 investigationImg"><img class="img-responsive" src="assets/img/feather.jpg"></div>
+            <div id="landEggsImg" class="col-md-5 investigationImg"><img class="img-responsive" src="assets/img/landEggs.jpg"></div>
+            <div id="waterEggsImg" class="col-md-5 investigationImg"><img class="img-responsive" src="assets/img/waterEggs.jpg"></div>
+            <div id="gillsImg" class="col-md-5 investigationImg"><img class="img-responsive" src="assets/img/gills.jpg"></div>
+            <div id="slimySkinImg" class="col-md-5 investigationImg"><img class="img-responsive" src="assets/img/slimySkin.jpg"></div>
+            <div id="greatJobImg" class="col-md-5 investigationImg"><img class="img-responsive" src="assets/img/greatJob.jpg"></div>
+            <div class="col-md-5" id="questionContainer">
+                <div id="questionHeading">
+                    <h1 id="introHeading">Let's classify it!</h1>
+                    <h1 id="congratulationsHeading">Congratulations!</h1>
+                </div>
+
+                <p id="isItAliveQuestion" class="question">First, is this a living thing? </p>
+                <p id="itsDeadSoMoveOnQuestion" class="question">Well, we're only working with living things today, so let's find something else to classify! </p>
+                <p id="betterCheckAgainItsAliveQuestion" class="question">Hmmm, check again, I thought I saw it move. Is this maybe a living thing? </p>
+                <p id="betterCheckAgainItsDeadQuestion" class="question">I don't know about that. Is this thing really alive?</p>
+                <p id="isItAVertebrateQuestion" class="question">Great! Does it have a backbone? </p>
+                <p id="betterCheckAgainHasNoBackboneQuestion" class="question">Take another look. Does this thing really have a backbone? </p>
+                <p id="betterCheckAgainHasABackboneQuestion" class="question">Take another look. Does this thing maybe have backbone, after all? </p>
+                <p id="itsNotAVertebrateSoMoveOnQuestion" class="question">Well, we're only working with vertebrates today, so let's find something else to classify! </p>
+                <p id="bloodTempQuestion" class="question">Perfect! Now, is it warm-blooded or cold-blooded? </p>
+                <p id="furOrFeathersQuestion" class="question">Okay, does it have feathers and wings? Or does it have fur or hair? </p>
+                <p id="itsAMammalQuestion" class="question">Then what we have here is a MAMMAL! Now, let's go find something else to classify!</p>
+                <p id="itsABirdQuestion" class="question">Then what we have here is a BIRD! Now, let's go find something else to classify!</p>
+                <p id="betterCheckAgainIsNotWarmBloodedQuestion" class="question">Check it one more time. Does it really have warm blood, or is it maybe cold-blooded?</p>
+                <p id="betterCheckAgainHasNoFeathersQuestion" class="question">Take a closer look. Does it really have feathers, or is it maybe furry or hairy? </p>
+                <p id="betterCheckAgainHasNoFurQuestion" class="question">Take a closer look. Does it really have fur or hair, or does it maybe have feathers? </p>
+                <p id="betterCheckAgainIsNotColdBloodedQuestion" class="question">Check it one more time. Does it really have cold blood, or is it maybe warm-blooded?</p>
+                <p id="landOrWaterEggsQuestion" class="question">Does this thing lay its eggs in the water or does it lay them on dry land?</p>
+                <p id="itsAReptileQuestion" class="question">Then what we have here is a REPTILE! Now, let's go find something else to classify!</p>
+                <p id="betterCheckAgainLaysEggsOnLandQuestion" class="question">Take another look. Does this thing really lay eggs in the water, or does it maybe lay them on dry land?</p>
+                <p id="betterCheckAgainLaysEggsInWaterQuestion" class="question">Take another look. Does this thing really lay eggs on dry land, or does it maybe lay them in the water?</p>
+                <p id="gillsOrSkinQuestion" class="question">Finally, does this thing have scales on its body and use gills for breathing underwater, or does it breathe and absorb water through its soft and slimy skin? </p>
+                <p id="itsAFishQuestion" class="question">Then what we have here is a FISH! Now, let's go find something else to classify!</p>
+                <p id="itsAnAmphibianQuestion" class="question">Then what we have here is an AMPHIBIAN! Now, let's go find something else to classify!</p>
+                <p id="betterCheckAgainHasGillsQuestion" class="question">Take another look. Does this thing really breathe through its slimy skin, or does it maybe have scales and gills?</p>
+                <p id="betterCheckAgainHasSlimySkinQuestion" class="question">Take another look. Does this thing really have scales and gills, or does it maybe breathe through its soft and slimy skin?</p>
+                <p id="congratulationsQuestion" class="question">You've classified everything you've seen today! Play again if you want to brush up on your skills, or if you're ready, move on to Level 2!</p>
+
+                <button class="btn btn-success yesButton" type="button">Yes </button>
+                <button class="btn btn-danger noButton" type="button">No </button>
+                
+                <button id="newThingButton" class="btn btn-warning" type="button">New Thing </button>
+                <button id="xRayButton" class="btn btn-warning" type="button">X-Ray </button>
+                <button id="warmBloodedButton" class="btn btn-success" type="button">Warm-Blooded </button>
+                <button id="coldBloodedButton" class="btn btn-success" type="button">Cold-Blooded </button>
+                <button id="feathersButton" class="btn btn-success" type="button">Feathers </button>
+                <button id="furButton" class="btn btn-success" type="button">Fur or Hair </button>
+                <button id="eggsOnLandButton" class="btn btn-success" type="button">On Land </button>
+                <button id="eggsInWaterButton" class="btn btn-success" type="button">In Water </button>
+                <button id="scalesAndGillsButton" class="btn btn-success" type="button">Scales and Gills </button>
+                <button id="softSlimySkinButton" class="btn btn-success" type="button">Soft and Slimy Skin </button>
+                <button id="investigateButton" class="btn btn-warning" type="button">Investigate </button>
+                <button id="playAgainButton" class="btn btn-success" type="button">Play Again </button>
+                <button id="level2Button" class="btn btn-success" type="button">Level 2 </button>
+            </div>
+            <div class="col-md-2" id="vocabularyContainer">
+                <h3 class="text-left">Vocabulary </h3>
+                <ul id="vocabularyList">
+                    <li id="amphibianVocabulary" class="vocabulary" title="Amphibians are cold-blooded animals that live both in the water and on land, lay their eggs in the water, and breath and absorb moisture through their soft and slimy skin." >amphibian </li>
+                    <li id="birdVocabulary" class="vocabulary" title="Birds are warm-blooded animals that have feathers, wings, and a beak with no teeth, and they bear their young by laying eggs on land.">bird </li>
+                    <li id="fishVocabulary" class="vocabulary" title="Fish are cold-blooded animals that live and lay their eggs in the water, breathe through gills, and usually have scales and fins.">fish </li>
+                    <li id="mammalVocabulary" class="vocabulary" title="Mammals have hair somewhere on their bodies, are warm-blooded, and the females have glands that produce milk.">mammal </li>
+                    <li id="reptileVocabulary" class="vocabulary" title="Reptiles are cold-blooded animals that lay their eggs on land, breathe air, and have skin that is covered in scales or bony plates.">reptile </li>
+                </ul>
+                <div></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="footerSegment">
+                <ul class="list-inline" id="classificationNames">
+                    <li id="amphibianFooter" class="footerClassificationNames">Amphibian </li>
+                    <li id="birdFooter" class="footerClassificationNames">Bird </li>
+                    <li id="fishFooter" class="footerClassificationNames">Fish </li>
+                    <li id="mammalFooter" class="footerClassificationNames">Mammal </li>
+                    <li id="reptileFooter" class="footerClassificationNames">Reptile </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div id="footerText" class="col-md-12">
+                <p id="footerP" class="text-center">website designed and developed by <a href="https://form.jotform.co/52944063242856" target="_blank" id="nameLink">Dustin Covan</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
